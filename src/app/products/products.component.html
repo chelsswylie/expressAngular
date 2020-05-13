@@ -1,0 +1,63 @@
+<body>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <h1>SHOPPING CART</h1>
+  <button>ADD</button>
+  <!-- for button, <button (click)="function from ts file", class="classname">ADD</button> -->
+  <TABLE>
+    <TR>
+      <th>#</th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Delete</th>
+      <th>Edit</th>
+    </TR>
+    <TR *ngFor="let Item of myCart; index as i">
+      <TD>{{ Item.pound }}</TD>
+      <TD>{{ Item.product }}</TD>
+      <TD>{{ Item.price }}</TD>
+      <TD>{{ Item.quantity }}</TD>
+      <TD>"Delete icon"</TD>
+      <TD>"Edit"</TD>
+      <!-- <Data 5 should be for edit and data 6 for delete icon -->
+    </TR>
+    <!-- <TR>
+      <TD>Data 1</TD>
+      <TD>Data 2</TD>
+      <TD>Data 3</TD>
+      <TD>Data 4</TD>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
+    </TR>
+    <TR>
+      <TD>Data 1</TD>
+      <TD>Data 2</TD>
+      <TD>Data 3</TD>
+      <TD>Data 4</TD>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
+    </TR>
+    <TR>
+      <TD>Data 1</TD>
+      <TD>Data 2</TD>
+      <TD>Data 3</TD>
+      <TD>Data 4</TD>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
+    </TR>
+    <TR>
+      <TD>Data 1</TD>
+      <TD>Data 2</TD>
+      <TD>Data 3</TD>
+      <TD>Data 4</TD>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
+    </TR> -->
+  </TABLE>
+</body>
